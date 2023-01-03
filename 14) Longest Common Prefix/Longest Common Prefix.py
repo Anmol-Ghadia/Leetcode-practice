@@ -1,4 +1,4 @@
-# O(n^2)
+# O(n) slow
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """
@@ -15,5 +15,3 @@ class Solution(object):
                 if (out_str[i] != j[i]):
                     return out_str[:-1]
         return out_str
-
-# could be improved to O(n) by itterating and eleminating chars
