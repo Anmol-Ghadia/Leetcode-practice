@@ -23,8 +23,8 @@ class Solution(object):
         """
         map = {}
         # difference : pos
-        for i in range(len(nums)):
-            if (nums[i] in map):
-                return [map[nums[i]],i]
+        for index,val in enumerate(nums):
+            if (val in map):
+                return [map[val],index]
                 
-            map[target - nums[i]] = i
+            map[target - val] = index
