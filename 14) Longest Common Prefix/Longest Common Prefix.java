@@ -1,4 +1,4 @@
-// Slow O(n^2)
+// O(n)
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         String smallest = strs[0];
